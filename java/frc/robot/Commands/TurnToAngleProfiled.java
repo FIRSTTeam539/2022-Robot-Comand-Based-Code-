@@ -11,14 +11,13 @@ import frc.robot.Subsystems.DriveSubsystem;
 import edu.wpi.first.wpilibj2.command.ProfiledPIDCommand;
 
 /** A command that will turn the robot to the specified angle using a motion profile. */
-public class TurnToAngleProfiled {}
-/*public class TurnToAngleProfiled extends ProfiledPIDCommand {
+public class TurnToAngleProfiled extends ProfiledPIDCommand {
   /**
    * Turns to robot to the specified angle using a motion profile.
    *
    * @param targetAngleDegrees The angle to turn to
    * @param drive The drive subsystem to use
-   
+   */
   public TurnToAngleProfiled(double targetAngleDegrees, DriveSubsystem drive) {
     super(
         new ProfiledPIDController(
@@ -50,4 +49,4 @@ public class TurnToAngleProfiled {}
     // End when the controller is at the reference.
     return getController().atGoal();
   }
-}*/
+}
